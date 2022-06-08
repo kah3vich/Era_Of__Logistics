@@ -1,0 +1,72 @@
+@@include('components/_head.pug', {
+    "title": "Админка перевозчика",
+})
+
+@@include('components/_header.pug')
+
+section.carrier
+    .containers
+        .carrier__w
+            @@include('components/_menuCarrier.pug')
+            .carrier__search
+                .carrier__search-i Поиск транспорта
+                .carrier__search-t Подберем транспорт для вашего груза
+                .carrier__search-a Помощь в организации сборных грузов
+                .carrier__search-b 
+                    .carrier__search-type
+                        .carrier__search-h 
+                            p Тип транспорта
+                            img(src="./svg/index/help.svg" alt="icons")
+                        select(class="c_select" id='track_i' name="sort" style="display: none")
+                            option Тип транспорта
+                            option(value="default" selected="") ЖД
+                            option(value="element_2") Авто
+                    .carrier__search-type
+                    .carrier__search-type
+                        .carrier__search-h 
+                            p Откуда везете груз
+                            img(src="./svg/index/help.svg" alt="icons")
+                        select(class="c_select" id='map_i' name="sort" style="display: none")
+                            option Откуда везете
+                            option(value="default" selected="") ЖД
+                            option(value="element_2") Авто
+                            option(value="element_3") Авто
+                            option(value="element_4") Авто
+                            option(value="element_5") Авто
+                            option(value="element_6") Авто
+                            option(value="element_7") Авто
+                    .carrier__search-type
+                        .carrier__search-h 
+                            p Выберите точку доставки
+                            img(src="./svg/index/help.svg" alt="icons")
+                        select(class="c_select" id='map_i' name="sort" style="display: none")
+                            option Куда везете
+                            option(value="default" selected="") ЖД
+                            option(value="element_2") Авто
+                            option(value="element_3") Авто
+                            option(value="element_4") Авто
+                            option(value="element_5") Авто
+                            option(value="element_6") Авто
+                            option(value="element_7") Авто
+                a(href="#").carrier__search-rsl
+                    p Найти транспорт
+                    img(src="./svg/carrier/chevron-right.svg" alt="icons")
+
+
+@@include('components/_footer.pug')
+
+@@include('components/_thx_request.pug')
+
+@@include('components/_registration.pug')
+
+@@include('components/_info_car.pug')
+
+@@include('components/_addClient.pug')
+
+@@include('components/_status.pug')
+
+@@include('components/_info.pug')
+
+@@include('components/_selectOne.pug')
+
+@@include('components/_script.pug')

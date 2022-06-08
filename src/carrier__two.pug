@@ -1,0 +1,84 @@
+@@include('components/_head.pug', {
+    "title": "Админка перевозчика",
+})
+
+@@include('components/_header.pug')
+
+section.carrier
+    .containers
+        .carrier__w
+            @@include('components/_menuCarrier.pug')
+            .carrier__car 
+                p.carrier__car-i Поиск транспорта
+                h3.carrier__car-t Мы нашли для вас 
+                    br 
+                    | транспорт:
+                    span 2 фуры
+                ul.carrier__car-l
+                    li.carrier__car-e
+                        img.carrier__car-icon(src="./svg/carrier/car.svg" alt="icons")
+                        .carrier__car-w
+                            .carrier__car-text
+                                p Заполненность машины
+                                span 45%
+                            .carrier__car-p(data-progress="45%")
+                                .carrier__car-bar
+                            .carrier__car-info Доступно для загрузки
+                            .carrier__car-a 
+                                h5 По весу:
+                                p 4 500кг
+                            .carrier__car-a 
+                                h5 По объему:
+                                p 25 м.куб
+                    li.carrier__car-e
+                        img.carrier__car-icon(src="./svg/carrier/train.svg" alt="icons")
+                        .carrier__car-w
+                            .carrier__car-text
+                                p Заполненность машины
+                                span 99%
+                            .carrier__car-p(data-progress="99%")
+                                .carrier__car-bar
+                            .carrier__car-info Доступно для загрузки
+                            .carrier__car-a 
+                                h5 По весу:
+                                p 4 500кг
+                            .carrier__car-a 
+                                h5 По объему:
+                                p 25 м.куб
+
+                .carrier__car-name 
+                    label(for="index__name" class="label")
+                        .carrier__car-n 
+                            p Как вас зовут 
+                            img(src="./svg/carrier/help.svg" alt="icons")
+                        img(src="./svg/carrier/user.svg" alt="icons" class="carrier__car-name_m")
+                        input(type="text" id='index__name' Placeholder='Ваше имя*')
+                .carrier__car-phone 
+                    label(for="index__phone" class="label")
+                        .carrier__car-ph
+                            p Куда 
+                            img(src="./svg/carrier/help.svg" alt="icons")
+                        img(src="./svg/carrier/phone.svg" alt="icons" class="carrier__car-phone_m")
+                        input(type="text" id='index__phone' Placeholder='Ваш телефон*')
+
+
+                button.carrier__car-trns
+                    p Подать заявку
+                    img(src="./svg/carrier/chevron-right.svg" alt="icons")
+
+
+@@include('components/_footer.pug')
+
+@@include('components/_thx_request.pug')
+
+@@include('components/_registration.pug')
+
+@@include('components/_info_car.pug')
+
+@@include('components/_addClient.pug')
+
+@@include('components/_status.pug')
+
+@@include('components/_info.pug')
+
+@@include('components/_script.pug')

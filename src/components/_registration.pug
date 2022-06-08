@@ -1,0 +1,52 @@
+.registration.display-n
+    .registration__w
+        button.registration__c 
+            img(src="./svg/model/close.svg" alt="icons")
+        .registration__b 
+            .registration__t Регистрация
+                br 
+                |транспортной компании
+            label(class="label" for="reg__comp").registration__comp
+                p Название компании
+                img(src="./svg/model/briefcase.svg" alt="icons")
+                input(type="text" id="reg__comp" placeholder="Название компании")
+            label(class="label" for="reg__user").registration__user
+                p Контактное лицо
+                img(src="./svg/model/user.svg" alt="icons")
+                input(type="text" id="reg__user" placeholder="Контактное лицо")
+            label(class="label" for="reg__mail").registration__mail
+                p Ваша почта
+                img(src="./svg/model/mail.svg" alt="icons")
+                input(type="text" id="reg__mail" placeholder="Ваша почта")
+            label(class="label" for="reg__phone").registration__phone
+                p Ваш телефон
+                img(src="./svg/model/phone.svg" alt="icons")
+                input(type="text" id="reg__phone" placeholder="Ваш телефон")
+            .registration__block
+                label(class="label" for="reg__bin").registration__bin
+                    p БИН
+                    img(src="./svg/model/credit-card.svg" alt="icons")
+                    input(type="text" id="reg__bin" placeholder="БИН")
+                label(class="label" for="reg__year").registration__year
+                    p С какого года работаете?
+                    img(src="./svg/model/calendar.svg" alt="icons")
+                    input(type="text" id="reg__year" placeholder="Ваш год")
+            label(class="label" for="reg__address").registration__address
+                p Ваш адрес
+                img(src="./svg/model/map.svg" alt="icons")
+                textarea(type="text" id="reg__address" placeholder="Ваш адрес")
+            label(class="label" for="reg__text").registration__text
+                p Ваши реквизиты
+                textarea(type="text" id="reg__text" placeholder="Ваши реквизиты")
+            .registration__block
+                label(class="label" for="reg__teng").registration__teng
+                    p Счет в тенгэ
+                    img(src="./svg/model/credit-card.svg" alt="icons")
+                    input(type="text" id="reg__teng" placeholder="Счет в тенгэ")
+                label(class="label" for="reg__usd").registration__usd
+                    p Счет в USD
+                    img(src="./svg/model/credit-card.svg" alt="icons")
+                    input(type="text" id="reg__usd" placeholder="Счет в USD")
+            button.registration__submit
+                p Зарегистрироваться
+                img(src="./svg/model/arrow-r.svg" alt="icons")

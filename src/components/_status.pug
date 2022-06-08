@@ -1,0 +1,33 @@
+.status.display-n
+    .status__w
+        button.status__c 
+            img(src="./svg/model/close.svg" alt="icons")
+        .status__b 
+            .status__type
+                .status__h 
+                    p Статус машины
+                    img(src="./svg/index/help.svg" alt="icons")
+                select(class="c_select" id='track_i' name="sort" style="display: none")
+                    option Загружается
+                    option(value="default" selected="") ЖД
+                    option(value="element_2") Авто
+                    option(value="element_3") Авто
+                    option(value="element_4") Авто
+                    option(value="element_5") Авто
+                    option(value="element_6") Авто
+                    option(value="element_7") Авто
+            label(class="label" for="reg__mail").status__path
+                p Пройдено по маршруту
+                img(src="./svg/model/maps.svg" alt="icons")
+                input(type="text" id="reg__mail" placeholder="км")
+            .status__block
+                label(class="label" for="reg__teng").status__kg
+                    p Осталось по весу, кг
+                    img(src="./svg/model/credit-card.svg" alt="icons")
+                    input(type="text" id="reg__teng" placeholder="кг")
+                label(class="label" for="reg__usd").status__cub
+                    p Остаток объем, м.куб
+                    img(src="./svg/model/credit-card.svg" alt="icons")
+                    input(type="text" id="reg__usd" placeholder="м.куб")
+            button.status__submit
+                p Обновить статус

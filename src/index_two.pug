@@ -1,0 +1,131 @@
+@@include('components/_head.pug', {
+    "title": "Главная",
+})
+
+@@include('components/_header.pug')
+
+section.ind-main
+    .containers
+        .ind-main__w 
+            .ind-main__info
+                p.ind-main__info-i Поиск транспорта
+                h3.ind-main__info-t Как работает наш сервис
+                p.ind-main__info-a Помощь в организации сборных грузов
+                ul.ind-main__info-l
+                    li.ind-main__info-e 
+                        img(src="./svg/index/icons__1.svg" alt="icons")
+                        .ind-main__info-text
+                            h3 Выберите направление 
+                            p Выберите откуда и куда вы хотите доставить груз в форме справа и предпочитаемый вид транспорта
+                    li.ind-main__info-e 
+                        img(src="./svg/index/icons__2.svg" alt="icons")
+                        .ind-main__info-text
+                            h3 Выберите направление 
+                            p Выберите откуда и куда вы хотите доставить груз в форме справа и предпочитаемый вид транспорта
+                    li.ind-main__info-e 
+                        img(src="./svg/index/icons__3.svg" alt="icons")
+                        .ind-main__info-text
+                            h3 Выберите направление 
+                            p Выберите откуда и куда вы хотите доставить груз в форме справа и предпочитаемый вид транспорта
+                    li.ind-main__info-e 
+                        img(src="./svg/index/icons__4.svg" alt="icons")
+                        .ind-main__info-text
+                            h3 Выберите направление 
+                            p Выберите откуда и куда вы хотите доставить груз в форме справа и предпочитаемый вид транспорта
+
+            .ind-main__form.display-n
+                p.ind-main__form-i Поиск транспорта
+                h3.ind-main__form-t Подберем транспорт для
+                    br 
+                    | вашего груза 
+                p.ind-main__form-a Помощь в организации сборных грузов
+                .ind-main__form-type
+                    .ind-main__form-h 
+                        p Выберите транспорт
+                        img(src="" alt="icons")
+                    select(class="c_select" name="sort" style="display: none")
+                        option Placeholder
+                        option(value="default" selected="") 1.Element
+                        option(value="element_2") 2.Element
+                        option(value="element_3") 3.Element
+                        option(value="element_4") 4.Element
+                        option(value="element_5") 5.Element
+                        option(value="element_6") 6.Element
+                        option(value="element_7") 7.Element
+                        option(value="element_8") 8.Element
+                button.ind-main__form-trns
+                    p Найти транспорт
+                    img(src="" alt="icons")
+            .ind-main__forms
+                p.ind-main__forms-i Поиск транспорта
+                h3.ind-main__forms-t Мы нашли для вас 
+                    br 
+                    | транспорт:
+                    span 2 фуры
+                ul.ind-main__forms-l
+                    li.ind-main__forms-e
+                        img.ind-main__forms-icon(src="./svg/index_two/car.svg" alt="icons")
+                        .ind-main__forms-w
+                            .ind-main__forms-text
+                                p Заполненность машины
+                                span 45%
+                            .ind-main__forms-p(data-progress="45%")
+                                .ind-main__forms-bar
+                            .ind-main__forms-info Доступно для загрузки
+                            .ind-main__forms-a 
+                                h5 По весу:
+                                p 4 500кг
+                            .ind-main__forms-a 
+                                h5 По объему:
+                                p 25 м.куб
+                    li.ind-main__forms-e
+                        img.ind-main__forms-icon(src="./svg/index_two/traint.svg" alt="icons")
+                        .ind-main__forms-w
+                            .ind-main__forms-text
+                                p Заполненность машины
+                                span 99%
+                            .ind-main__forms-p(data-progress="99%")
+                                .ind-main__forms-bar
+                            .ind-main__forms-info Доступно для загрузки
+                            .ind-main__forms-a 
+                                h5 По весу:
+                                p 4 500кг
+                            .ind-main__forms-a 
+                                h5 По объему:
+                                p 25 м.куб
+
+                .ind-main__forms-name 
+                    label(for="index__name" class="label")
+                        .ind-main__forms-n 
+                            p Как вас зовут 
+                            img(src="./svg/index/help.svg" alt="icons")
+                        img(src="./svg/index_two/user.svg" alt="icons" class="ind-main__forms-name_m")
+                        input(type="text" id='index__name' Placeholder='Ваше имя*')
+                .ind-main__forms-phone 
+                    label(for="index__phone" class="label")
+                        .ind-main__forms-ph
+                            p Куда 
+                            img(src="./svg/index/help.svg" alt="icons")
+                        img(src="./svg/index_two/phone.svg" alt="icons" class="ind-main__forms-phone_m")
+                        input(type="text" id='index__phone' Placeholder='Ваш телефон*')
+
+
+                button.ind-main__forms-trns
+                    p Подать заявку
+                    img(src="./svg/index_two/chevron-right.svg" alt="icons")
+
+@@include('components/_footer.pug')
+
+@@include('components/_thx_request.pug')
+
+@@include('components/_registration.pug')
+
+@@include('components/_info_car.pug')
+
+@@include('components/_addClient.pug')
+
+@@include('components/_status.pug')
+
+@@include('components/_info.pug')
+
+@@include('components/_script.pug')

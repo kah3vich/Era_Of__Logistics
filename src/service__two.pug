@@ -1,0 +1,165 @@
+@@include('components/_head.pug', {
+    "title": "Админка сервиса",
+})
+
+@@include('components/_header.pug')
+
+section.service
+    .containers
+        .service__w
+            @@include('components/_menuService.pug')
+            ul.service__list
+                li.service__list-h 
+                    .service__checkbox-a
+                        input(class="service__checkbox-a__input" type="checkbox" id="checkbox_all")
+                        label(class="service__checkbox-a__label" for="checkbox_all")
+                    .service__list-st Статус
+                    .service__list-tp 
+                        h5 Тип транспорта
+                        p номер
+                    .service__list-st Старт
+                    .service__list-fn Финиш
+                    .service__list-js Действия
+                li.service__list-e 
+                    .service__checkbox
+                        input(class="service__checkbox__input" type="checkbox" id="checkbox_1")
+                        label(class="service__checkbox__label" for="checkbox_1")
+                    .service__list-path 
+                        h5 В пути
+                        p 256 км
+                    .service__list-type 
+                        h5 Фура
+                        p kz 101 FFF 17
+                    .service__list-start 
+                        p Караганда
+                    .service__list-finally 
+                        p Усть-Каменогорск
+                    .service__list-just 
+                        button.service__list-show 
+                            img(src="./svg/service/eye.svg" alt="icons")
+                        button.service__list-more  
+                            img(src="./svg/service/more.svg" alt="icons")
+                        button.service__list-users  
+                            img(src="./svg/service/users.svg" alt="icons")
+                        button.service__list-basket  
+                            img(src="./svg/service/trash.svg" alt="icons")
+                        button.service__list-add   
+                            img(src="./svg/service/drop.svg" alt="icons")
+                li.service__list-e 
+                    .service__checkbox
+                        input(class="service__checkbox__input" type="checkbox" id="checkbox_2")
+                        label(class="service__checkbox__label" for="checkbox_2")
+                    .service__list-path 
+                        h5 В пути
+                        p 256 км
+                    .service__list-type 
+                        h5 Фура
+                        p kz 101 FFF 17
+                    .service__list-start 
+                        p Караганда
+                    .service__list-finally 
+                        p Усть-Каменогорск
+                    .service__list-just 
+                        button.service__list-show 
+                            img(src="./svg/service/eye.svg" alt="icons")
+                        button.service__list-more  
+                            img(src="./svg/service/more.svg" alt="icons")
+                        button.service__list-users  
+                            img(src="./svg/service/users.svg" alt="icons")
+                        button.service__list-basket  
+                            img(src="./svg/service/trash.svg" alt="icons")
+                        button.service__list-add   
+                            img(src="./svg/service/drop.svg" alt="icons")
+                li.service__list-e 
+                    .service__checkbox
+                        input(class="service__checkbox__input" type="checkbox" id="checkbox_3")
+                        label(class="service__checkbox__label" for="checkbox_3")
+                    .service__list-path 
+                        h5 В пути
+                        p 256 км
+                    .service__list-type 
+                        h5 Фура
+                        p kz 101 FFF 17
+                    .service__list-start 
+                        p Караганда
+                    .service__list-finally 
+                        p Усть-Каменогорск
+                    .service__list-just 
+                        button.service__list-show 
+                            img(src="./svg/service/eye.svg" alt="icons")
+                        button.service__list-more  
+                            img(src="./svg/service/more.svg" alt="icons")
+                        button.service__list-users  
+                            img(src="./svg/service/users.svg" alt="icons")
+                        button.service__list-basket  
+                            img(src="./svg/service/trash.svg" alt="icons")
+                        button.service__list-add   
+                            img(src="./svg/service/drop.svg" alt="icons")
+                li.service__list-e 
+                    .service__checkbox
+                        input(class="service__checkbox__input" type="checkbox" id="checkbox_4")
+                        label(class="service__checkbox__label" for="checkbox_4")
+                    .service__list-path 
+                        h5 В пути
+                        p 256 км
+                    .service__list-type 
+                        h5 Фура
+                        p kz 101 FFF 17
+                    .service__list-start 
+                        p Караганда
+                    .service__list-finally 
+                        p Усть-Каменогорск
+                    .service__list-just 
+                        button.service__list-show 
+                            img(src="./svg/service/eye.svg" alt="icons")
+                        button.service__list-more  
+                            img(src="./svg/service/more.svg" alt="icons")
+                        button.service__list-users  
+                            img(src="./svg/service/users.svg" alt="icons")
+                        button.service__list-basket  
+                            img(src="./svg/service/trash.svg" alt="icons")
+                        button.service__list-add   
+                            img(src="./svg/service/drop.svg" alt="icons")
+                li.service__list-e 
+                    .service__checkbox
+                        input(class="service__checkbox__input" type="checkbox" id="checkbox_5")
+                        label(class="service__checkbox__label" for="checkbox_5")
+                    .service__list-path 
+                        h5 В пути
+                        p 256 км
+                    .service__list-type 
+                        h5 Фура
+                        p kz 101 FFF 17
+                    .service__list-start 
+                        p Караганда
+                    .service__list-finally 
+                        p Усть-Каменогорск
+                    .service__list-just 
+                        button.service__list-show 
+                            img(src="./svg/service/eye.svg" alt="icons")
+                        button.service__list-more  
+                            img(src="./svg/service/more.svg" alt="icons")
+                        button.service__list-users  
+                            img(src="./svg/service/users.svg" alt="icons")
+                        button.service__list-basket  
+                            img(src="./svg/service/trash.svg" alt="icons")
+                        button.service__list-add   
+                            img(src="./svg/service/drop.svg" alt="icons")
+
+
+
+@@include('components/_footer.pug')
+
+@@include('components/_thx_request.pug')
+
+@@include('components/_registration.pug')
+
+@@include('components/_info_car.pug')
+
+@@include('components/_addClient.pug')
+
+@@include('components/_status.pug')
+
+@@include('components/_info.pug')
+
+@@include('components/_script.pug')

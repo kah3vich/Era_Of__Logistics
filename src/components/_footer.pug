@@ -1,0 +1,69 @@
+footer.footer 
+
+script.
+    function myFunction(e) {
+        //- $('.label').removeClass('focus_')
+        //- $(this).parent().hasClass('label') ? $(this).parent().addClass('focus_') : '' 
+
+
+        //- if ($(this).hasClass('c_select-item-active')) {
+        //-     $('.c_select').removeClass('focus_')
+        //-     $('div.c_select').removeClass('c_select-item-active')
+        //-     $('.c_select-block').addClass('display-n')
+        //- } else {
+        //-     alert(2)
+        //- }
+        //- $(e).addClass('focus_')
+
+
+        //- if ($(this).hasClass('c_select-item-active'))
+    }
+
+    //! Focus - Select
+    //- $('div.c_select').on('click', function (e) {
+    //-     // событие клика по веб-документу
+    //-     var div = $('div.c_select')  // тут указываем ID элемента
+    //-     div.addClass('focus_')
+    //- })
+
+    $(document).ready(() => {
+        setTimeout(() => {
+            $('div.c_select').on('click', function() {
+                $('div.c_select').not($(this)).removeClass('focus_')
+                $('div.c_select').not($(this)).removeClass('c_select-item-active')
+                $('.c_select-block').not($(this).children('.c_select-block')).addClass('display-n')
+
+                if ($(this).hasClass('focus_')) {
+                    $(this).removeClass('focus_')
+
+                } else {
+                    $(this).addClass('focus_')
+                }
+            })
+
+
+            $('.c_select-element').on('click', function() {
+                setTimeout(() => {
+                    $('.c_select').removeClass('focus_')
+                }, 1)
+            })
+
+            $(document).on('click', function (e) {
+                // событие клика по веб-документу
+                var div = $('div.c_select') // тут указываем ID элемента
+
+                if (
+                    !div.is(e.target) && // если клик был не по нашему блоку
+                    div.has(e.target).length === 0
+                ) {
+                    // и не по его дочерним элементам
+                    div.removeClass('focus_')
+                    div.removeClass('c_select-item-active')
+                    $('.c_select-block').addClass('display-n')
+                }
+            })
+        }, 100)
+    })
+
+
+    //! Focus - Select

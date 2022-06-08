@@ -1,0 +1,95 @@
+@@include('components/_head.pug', {
+    "title": "Главная",
+})
+
+@@include('components/_header.pug')
+
+section.ind-main
+    .containers
+        .ind-main__w 
+            .ind-main__info
+                p.ind-main__info-i Поиск транспорта
+                h3.ind-main__info-t Как работает наш сервис
+                p.ind-main__info-a Помощь в организации сборных грузов
+                ul.ind-main__info-l
+                    li.ind-main__info-e 
+                        img(src="./svg/index/icons__1.svg" alt="icons")
+                        .ind-main__info-text
+                            h3 Выберите направление 
+                            p Выберите откуда и куда вы хотите доставить груз в форме справа и предпочитаемый вид транспорта
+                    li.ind-main__info-e 
+                        img(src="./svg/index/icons__2.svg" alt="icons")
+                        .ind-main__info-text
+                            h3 Выберите направление 
+                            p Выберите откуда и куда вы хотите доставить груз в форме справа и предпочитаемый вид транспорта
+                    li.ind-main__info-e 
+                        img(src="./svg/index/icons__3.svg" alt="icons")
+                        .ind-main__info-text
+                            h3 Выберите направление 
+                            p Выберите откуда и куда вы хотите доставить груз в форме справа и предпочитаемый вид транспорта
+                    li.ind-main__info-e 
+                        img(src="./svg/index/icons__4.svg" alt="icons")
+                        .ind-main__info-text
+                            h3 Выберите направление 
+                            p Выберите откуда и куда вы хотите доставить груз в форме справа и предпочитаемый вид транспорта
+
+            .ind-main__form
+                p.ind-main__form-i Поиск транспорта
+                h3.ind-main__form-t Подберем транспорт для
+                    br 
+                    | вашего груза 
+                p.ind-main__form-a Помощь в организации сборных грузов
+                .ind-main__form-type
+                    .ind-main__form-h 
+                        p Выберите транспорт
+                        img(src="./svg/index/help.svg" alt="icons")
+                    select(class="c_select" id='track_i' name="sort" style="display: none")
+                        option На чем будем везти
+                        option(value="default" selected="") ЖД
+                        option(value="element_2") Авто
+                .ind-main__form-type
+                    .ind-main__form-h 
+                        p Откуда
+                        img(src="./svg/index/help.svg" alt="icons")
+                    select(class="c_select" id='map_i' name="sort" style="display: none")
+                        option Начальная точка маршрута
+                        option(value="default" selected="") ЖД
+                        option(value="element_2") Авто
+                        option(value="element_3") Авто
+                        option(value="element_4") Авто
+                        option(value="element_5") Авто
+                        option(value="element_6") Авто
+                        option(value="element_7") Авто
+                .ind-main__form-type
+                    .ind-main__form-h 
+                        p Куда
+                        img(src="./svg/index/help.svg" alt="icons")
+                    select(class="c_select" id='map_i' name="sort" style="display: none")
+                        option Конец маршрута
+                        option(value="default" selected="") ЖД
+                        option(value="element_2") Авто
+                        option(value="element_3") Авто
+                        option(value="element_4") Авто
+                        option(value="element_5") Авто
+                        option(value="element_6") Авто
+                        option(value="element_7") Авто
+
+                button.ind-main__form-trns
+                    p Найти транспорт
+                    img(src="" alt="icons")
+
+@@include('components/_footer.pug')
+
+@@include('components/_thx_request.pug')
+
+@@include('components/_registration.pug')
+
+@@include('components/_info_car.pug')
+
+@@include('components/_addClient.pug')
+
+@@include('components/_status.pug')
+
+@@include('components/_info.pug')
+
+@@include('components/_script.pug')
