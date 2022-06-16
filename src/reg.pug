@@ -1,0 +1,71 @@
+@@include('components/_head.pug', {
+    "title": "Авторизация",
+})
+
+@@include('components/_headers.pug')
+
+section.reg
+    .containers
+        .reg__w     
+            ul.reg__tab 
+                li.reg__tab-i.reg__tab-a#reg__tab__one
+                    button.reg__tab-w 
+                        p Авторизация
+                li.reg__tab-i#reg__tab__two
+                    button.reg__tab-w 
+                        p Регистрация
+            .reg__block
+                .reg__auth
+                    label.reg__auth-p 
+                        .reg__auth-i 
+                            img(src="./svg/reg/phone.svg" alt="icons")
+                        .reg__auth-l 
+                        input.reg__auth-t(placeholder="Введите свой номер" id="reg__phone")
+                    label.reg__auth-p 
+                        .reg__auth-i 
+                            img(src="./svg/reg/pass.svg" alt="icons")
+                        .reg__auth-l 
+                        input.reg__auth-t(placeholder="Введите свой пароль")
+                    button.reg__auth-a 
+                        p Войти
+                    button.reg__auth-r 
+                        p Забыли пароль?
+
+
+
+                .reg__regist.display-n 
+                    label.reg__regist-p 
+                        .reg__regist-i 
+                            img(src="./svg/reg/phone.svg" alt="icons")
+                        .reg__regist-l 
+                        input.reg__regist-t(placeholder="Введите свой номер" id="reg__phone")
+                    label.reg__regist-p 
+                        .reg__regist-i 
+                            img(src="./svg/reg/pass.svg" alt="icons")
+                        .reg__regist-l 
+                        input.reg__regist-t(placeholder="Придумайте пароль")
+                    label.reg__regist-p 
+                        .reg__regist-i 
+                            img(src="./svg/reg/ready.svg" alt="icons")
+                        .reg__regist-l 
+                        input.reg__regist-t(placeholder="Подтвердите пароль")
+                    button.reg__regist-a 
+                        p Далее
+
+
+                .reg__code.display-n
+                    .reg__code-t 
+                        p На ваш номер был выслан СМС с 6-ти значным кодом подтверждения
+                    .reg__code-w 
+                        input(name="code" type="text" maxlength="1" autofocus)
+                        input(name="code" type="text" maxlength="1")
+                        input(name="code" type="text" maxlength="1")
+                        input(name="code" type="text" maxlength="1")
+                        input(name="code" type="text" maxlength="1")
+                        input(name="code" type="text" maxlength="1")
+                    button.reg__code-a 
+                        p Подтвердить
+
+
+
+@@include('components/_script.pug')

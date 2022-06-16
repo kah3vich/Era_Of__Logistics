@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css?_v=20220616125205" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20220616125205" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js?_v=20220616125205" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="css/style.min.css?_v=20220616125205">
+</html>
+<body></body>
+<header class="headers"> 
+  <div class="containers">
+    <div class="headers__w"><a class="headers__l" href="index.html"><picture><source srcset="./img/logo.webp" type="image/webp"><img class="headers__l-o" src="./img/logo.png" alt="logo"></picture><picture><source srcset="./img/logo_m.webp" type="image/webp"><img class="headers__l-m" src="./img/logo_m.png" alt="logo"></picture></a></div>
+  </div>
+</header>
+<section class="reg">
+  <div class="containers">
+    <div class="reg__w">    
+      <ul class="reg__tab"> 
+        <li class="reg__tab-i reg__tab-a" id="reg__tab__one">
+          <button class="reg__tab-w"> 
+            <p>Авторизация</p>
+          </button>
+        </li>
+        <li class="reg__tab-i" id="reg__tab__two">
+          <button class="reg__tab-w"> 
+            <p>Регистрация</p>
+          </button>
+        </li>
+      </ul>
+      <div class="reg__block">
+        <div class="reg__auth">
+          <label class="reg__auth-p"> 
+            <div class="reg__auth-i"> <img src="./svg/reg/phone.svg" alt="icons"></div>
+            <div class="reg__auth-l"> </div>
+            <input class="reg__auth-t" placeholder="Введите свой номер" id="reg__phone">
+          </label>
+          <label class="reg__auth-p"> 
+            <div class="reg__auth-i"> <img src="./svg/reg/pass.svg" alt="icons"></div>
+            <div class="reg__auth-l"> </div>
+            <input class="reg__auth-t" placeholder="Введите свой пароль">
+          </label>
+          <button class="reg__auth-a"> 
+            <p>Войти</p>
+          </button>
+          <button class="reg__auth-r"> 
+            <p>Забыли пароль?</p>
+          </button>
+        </div>
+        <div class="reg__regist display-n"> 
+          <label class="reg__regist-p"> 
+            <div class="reg__regist-i"> <img src="./svg/reg/phone.svg" alt="icons"></div>
+            <div class="reg__regist-l"> </div>
+            <input class="reg__regist-t" placeholder="Введите свой номер" id="reg__phone">
+          </label>
+          <label class="reg__regist-p"> 
+            <div class="reg__regist-i"> <img src="./svg/reg/pass.svg" alt="icons"></div>
+            <div class="reg__regist-l"> </div>
+            <input class="reg__regist-t" placeholder="Придумайте пароль">
+          </label>
+          <label class="reg__regist-p"> 
+            <div class="reg__regist-i"> <img src="./svg/reg/ready.svg" alt="icons"></div>
+            <div class="reg__regist-l"> </div>
+            <input class="reg__regist-t" placeholder="Подтвердите пароль">
+          </label>
+          <button class="reg__regist-a"> 
+            <p>Далее</p>
+          </button>
+        </div>
+        <div class="reg__code display-n">
+          <div class="reg__code-t"> 
+            <p>На ваш номер был выслан СМС с 6-ти значным кодом подтверждения</p>
+          </div>
+          <div class="reg__code-w"> 
+            <input name="code" type="text" maxlength="1" autofocus>
+            <input name="code" type="text" maxlength="1">
+            <input name="code" type="text" maxlength="1">
+            <input name="code" type="text" maxlength="1">
+            <input name="code" type="text" maxlength="1">
+            <input name="code" type="text" maxlength="1">
+          </div>
+          <button class="reg__code-a"> 
+            <p>Подтвердить</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script type="module" src="js/app.min.js?_v=20220616125205"></script>

@@ -1,3 +1,7 @@
+# Reg: [click me](https://kah3vich.github.io/Era_Of__Logistics/public/reg.html)
+
+<hr />
+
 # Index 1: [click me](https://kah3vich.github.io/Era_Of__Logistics/public/index_one.html)
 
 # Index 2: [click me](https://kah3vich.github.io/Era_Of__Logistics/public/index_two.html)

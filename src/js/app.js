@@ -5,4 +5,4 @@
 @@include("./carrier/index.js");
 @@include("./company/index.js");
 @@include("./service/index.js");
-
+@@include("./reg/index.js");
