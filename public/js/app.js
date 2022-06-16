@@ -308,4 +308,8 @@ $(function () {
     $('.reg__code').removeClass('display-n');
     $('.reg__regist').addClass('display-n');
   });
+}); //! Notif
+
+$('.notif__h-c').on('click', function () {
+  return $('.notif').addClass('display-n');
 });

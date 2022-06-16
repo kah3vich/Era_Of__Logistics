@@ -1100,6 +1100,161 @@ select {
 	display : none;
 }
 
+.notif {
+	width : 430px;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	border-radius : 4px;
+	position : fixed;
+	bottom : 15px;
+	left : 15px;
+	background : #ffffff;
+	border-radius : 8px;
+	border : 1px solid #f3f4f6;
+}
+
+.notif__h {
+	width : 100%;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	-webkit-box-pack : center;
+	-ms-flex-pack : center;
+	justify-content : center;
+	position : relative;
+	height : 62px;
+	background : #f3f4f6;
+	border-radius : 8px 8px 0px 0px;
+}
+
+.notif__h-t {
+	font-family : Inter;
+	font-style : normal;
+	font-weight : 600;
+	font-size : 17px;
+	line-height : 140%;
+	color : #000000;
+}
+
+.notif__h-c {
+	position : absolute;
+	cursor : pointer;
+	background : transparent;
+	right : 22px;
+	top : 50%;
+	-webkit-transform : translate(0%, -50%);
+	    -ms-transform : translate(0%, -50%);
+	        transform : translate(0%, -50%);
+}
+
+.notif__l {
+	margin : 10px 0 0 0;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+	width : 100%;
+}
+
+.notif__l-i {
+	width : 100%;
+	border-bottom : 1px solid #d6d6d6;
+	padding : 15px 28px 13px 26px;
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+}
+
+.notif__l-i:last-child {
+	border-bottom : none;
+}
+
+.notif__l-i img {
+	margin : 0 15px 0 0;
+}
+
+.notif__l-t {
+	display : -webkit-box;
+	display : -ms-flexbox;
+	display : flex;
+	-webkit-box-orient : vertical;
+	-webkit-box-direction : normal;
+	-ms-flex-direction : column;
+	    flex-direction : column;
+	width : 175px;
+	-webkit-box-align : start;
+	-ms-flex-align : start;
+	align-items : flex-start;
+	-webkit-box-pack : start;
+	-ms-flex-pack : start;
+	justify-content : flex-start;
+}
+
+.notif__l-t p {
+	font-family : Inter;
+	font-style : normal;
+	font-weight : 500;
+	font-size : 14px;
+	line-height : 140%;
+	color : #000000;
+}
+
+.notif__l-t p span {
+	font-weight : 900;
+	font-family : Inter;
+	font-style : normal;
+	font-size : 14px;
+	line-height : 140%;
+	color : #000000;
+}
+
+.notif__l-t span {
+	margin : 4px 0 0 0;
+	font-family : Inter;
+	font-style : normal;
+	font-weight : 500;
+	font-size : 12px;
+	line-height : 140%;
+	color : #ababab;
+}
+
+.notif__l-s {
+	margin : auto 0 auto auto;
+	width : 15px;
+	height : 15px;
+	border-radius : 50%;
+	background : #395e95;
+}
+
 .c_select {
 	-webkit-box-shadow : 6px 6px 10px -1px rgba(0, 0, 0, 0.1), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 	        box-shadow : 6px 6px 10px -1px rgba(0, 0, 0, 0.1), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);

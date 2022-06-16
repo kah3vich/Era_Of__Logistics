@@ -32,3 +32,7 @@ $(() => {
 		$('.reg__regist').addClass('display-n')
 	})
 })
+
+//! Notif
+
+$('.notif__h-c').on('click', () => $('.notif').addClass('display-n'))
