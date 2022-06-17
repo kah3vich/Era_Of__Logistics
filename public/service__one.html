@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Админка сервиса</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css?_v=20220617105719" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css?_v=20220617232635" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
   </head>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20220617105719" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js?_v=20220617105719" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" href="css/style.min.css?_v=20220617105719">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20220617232635" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js?_v=20220617232635" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css?_v=20220617232635" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js?_v=20220617232635" integrity="sha512-RCgrAvvoLpP7KVgTkTctrUdv7C6t7Un3p1iaoPr1++3pybCyCsCZZN7QEHMZTcJTmcJ7jzexTO+eFpHk4OCFAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.css?_v=20220617232635" integrity="sha512-YdYyWQf8AS4WSB0WWdc3FbQ3Ypdm0QCWD2k4hgfqbQbRCJBEgX0iAegkl2S1Evma5ImaVXLBeUkIlP6hQ1eYKQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js?_v=20220617232635" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="css/style.min.css?_v=20220617232635">
 </html>
 <body></body>
 <header class="header"> 
@@ -24,28 +28,32 @@
 <section class="service">
   <div class="containers">
     <div class="service__w">
-      <div class="menuService">
-        <div class="menuService-tab"><a class="menuService-elem" href="#"><img src="./svg/service/truck.svg" alt="icons">
-            <p>Добавить машину</p></a><a class="menuService-elem" href="#"><img src="./svg/service/map.svg" alt="icons">
-            <p>Машины на маршрутах</p></a><a class="menuService-elem" href="#"><img src="./svg/service/briefcase.svg" alt="icons">
-            <p>Транспортные компа... 
-              <div>(2)</div>
-            </p></a></div>
-        <div class="menuService-info"><a class="menuService-elem" href="#"><img src="./svg/service/phone.svg" alt="icons">
-            <p>Поддержка</p></a><a class="menuService-elem" href="#"><img src="./svg/service/bell.svg" alt="icons">
-            <p>Уведомления <span>(20)</span></p></a><a class="menuService-elem" href="#"><img src="./svg/service/settings.svg" alt="icons">
-            <p>Настройки</p></a></div>
-        <button class="menuService-arrow"> <img src="./svg/service/chevron-left.svg" alt="icons">
-          <p>Свернуть панель</p>
-        </button>
-        <div class="menuService-hr"></div>
-        <div class="menuService-profile">
-          <div class="menuService-ph"> <picture><source srcset="./img/Avatar.webp" type="image/webp"><img src="./img/Avatar.png" alt="avatar"></picture></div>
-          <div class="menuService-t"> 
-            <h3>Сидоров Пафнутий</h3>
-            <p>Pafnutiy.Sidoroff@gmail.com</p>
+      <div class="menuService"> 
+        <div class="menuService-w">
+          <div class="menuService-tab"><a class="menuService-elem" href="#"><img src="./svg/service/truck.svg" alt="icons">
+              <p>Добавить машину</p></a><a class="menuService-elem" href="#"><img src="./svg/service/map.svg" alt="icons">
+              <p>Машины на маршрутах</p></a><a class="menuService-elem" href="#"><img src="./svg/service/briefcase.svg" alt="icons">
+              <p>Транспортные компа... 
+                <div>(2)</div>
+              </p></a></div>
+          <div class="menuService-wr">
+            <div class="menuService-info"><a class="menuService-elem" href="#"><img src="./svg/service/phone.svg" alt="icons">
+                <p>Поддержка</p></a><a class="menuService-elem" href="#"><img src="./svg/service/bell.svg" alt="icons">
+                <p>Уведомления <span>(20)</span></p></a><a class="menuService-elem" href="#"><img src="./svg/service/settings.svg" alt="icons">
+                <p>Настройки</p></a></div>
+            <button class="menuService-arrow"> <img src="./svg/service/chevron-left.svg" alt="icons">
+              <p>Свернуть панель</p>
+            </button>
+            <div class="menuService-hr"></div>
+            <div class="menuService-profile">
+              <div class="menuService-ph"> <picture><source srcset="./img/Avatar.webp" type="image/webp"><img src="./img/Avatar.png" alt="avatar"></picture></div>
+              <div class="menuService-t"> 
+                <h3>Сидоров Пафнутий</h3>
+                <p>Pafnutiy.Sidoroff@gmail.com</p>
+              </div>
+              <button class="menuService-logout"><img src="./svg/service/log-out.svg" alt="icons"></button>
+            </div>
           </div>
-          <button class="menuService-logout"><img src="./svg/service/log-out.svg" alt="icons"></button>
         </div>
       </div>
       <ul class="service__info">
@@ -477,4 +485,4 @@
     </div>
   </div>
 </div>
-<script type="module" src="js/app.min.js?_v=20220617105719"></script>
+<script type="module" src="js/app.min.js?_v=20220617232635"></script>

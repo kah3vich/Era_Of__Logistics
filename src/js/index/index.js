@@ -11,7 +11,8 @@ $(() => {
 				)
 		}
 	}, 500)
-	$('#index__phone, #reg__phone').mask('+7 (999) 99-99-999')
+	$('#index__phone, #reg__phone').mask('+7 (999) 999-99-99')
+	$('#company__three').datepicker()
 })
 
 //! Model - Thx Request
@@ -157,10 +158,10 @@ $(document).on('click', function (e) {
 //! Add - Select One
 
 $('.service__info-more').on('click', function () {
-	$('.service__info-more').children("selectOne").addClass('display-n')
+	$('.service__info-more').children('selectOne').addClass('display-n')
 	setTimeout(() => {
 		$(this).children('.selectOne').removeClass('display-n')
-	}, 1);
+	}, 1)
 })
 
 $('.selectOne__i').on('click', () => {
@@ -177,10 +178,10 @@ $(document).mouseup(function (e) {
 //! Add - Select Two
 
 $('.company__list-users').on('click', function () {
-	$('.company__list-users').children("selectTwo").addClass('display-n')
+	$('.company__list-users').children('selectTwo').addClass('display-n')
 	setTimeout(() => {
 		$(this).children('.selectTwo').removeClass('display-n')
-	}, 1);
+	}, 1)
 })
 
 $('.selectTwo__i').on('click', () => {
