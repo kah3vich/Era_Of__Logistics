@@ -8074,7 +8074,8 @@ select {
 	-webkit-box-pack : center;
 	-ms-flex-pack : center;
 	justify-content : center;
-	height : 80vh;
+	height : 100%;
+	margin : 95px auto;
 }
 
 .reg__w {
