@@ -56,7 +56,10 @@
 		display: none;
 	}
 	.header__l-m {
-		display: block;
+		display: block !important;
+	}
+	.header__b img {
+		margin: 0 !important;
 	}
 	.header {
 		min-height: 72px;

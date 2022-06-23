@@ -1,0 +1,99 @@
+
+@media (max-width: 1200px) {
+    .menuCarrier-info {
+        margin: 10px 0 0 0;
+    }
+    .menuCarrier {
+        height: 100% !important;
+        width: 60px !important;
+    }
+    .menuCarrier-elem img {
+        margin: 0;
+    }
+    .menuCarrier-wr {
+        width: 100%;
+    }
+    .menuCarrier-arrow {
+        display: none !important;
+    }
+    .menuCarrier-elem p {
+        display: none !important;
+    }
+    .menuCarrier-elem div {
+        display: none !important;
+    }
+    .menuCarrier-t {
+        display: none !important;
+    }
+    .menuCarrier-profile {
+        margin: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+    }
+    .menuCarrier-logout {
+        top: auto !important;
+        right: auto !important;
+        position: static !important;
+    }
+    .menuCarrier-elem {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        padding: 8px 9px !important;
+    }
+    .menuCarrier {
+        padding: 8px 8px !important;
+    }
+}
+
+@media (max-width: 700px) {
+    .carrier__car-e {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .carrier__car-w, .carrier__car-name, .carrier__car-phone {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .carrier__car-a {width: 100%;}
+    .carrier__car-text p, .carrier__car-text span {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 120%;
+        color: #1f2937;
+
+    }
+    .carrier__car-w {
+        margin: 10px 0 0 0;
+    }
+}
+
+
+@media (max-width: 780px) {
+    .carrier__search-b, .carrier__search-g {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .carrier__search-type:nth-child(2) {
+        display: none;
+    }
+    .carrier__search-g {
+        gap: 55px;
+    }
+}
+
+@media (max-width: 760px) {
+    .carrier__info-g {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .carrier__info-w, .carrier__info {
+        width: 100%;
+    }
+}
