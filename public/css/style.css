@@ -9354,6 +9354,21 @@ select {
 }
 
 @media (max-width: 500px) {
+	.carrier__search-rsl {
+		padding : 10px 15px !important;
+		width : 100% !important;
+	}
+
+	.service__search-rsl {
+		padding : 10px 15px !important;
+		width : 100% !important;
+	}
+
+	.company__search-rsl {
+		padding : 10px 15px !important;
+		width : 100% !important;
+	}
+
 	.service__info-e {
 		-ms-grid-columns : (1fr)[1];
 		grid-template-columns : repeat(1, 1fr);
